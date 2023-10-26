@@ -52,7 +52,7 @@ main {
     justify-content: start;
     justify-items: center;
     column-gap: 10rem;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
 
 }
 
@@ -62,6 +62,10 @@ main>section {
 }
 
 @media only screen and (max-width: 767px) {
+    body {
+        margin-bottom: 80rem;
+    }
+
     main {
         padding-bottom: 5rem !important;
     }
