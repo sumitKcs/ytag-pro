@@ -8,13 +8,15 @@
     position: fixed;
     bottom: 1rem;
     padding: .8rem 1rem;
-    border-radius: 2rem;
+    /* border-radius: 2rem; */
     z-index: 10;
-    background-color: white;
-    gap: 1rem
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    gap: 1rem;
 }
 
 .bottom_menu_items {
+    background-color: transparent;
     width: 100%;
     display: flex;
     justify-content: space-around;

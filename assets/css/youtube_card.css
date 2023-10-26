@@ -17,6 +17,15 @@
     position: relative;
 }
 
+.youtube_card:hover img {
+    border: 2px solid red;
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+    transition: transform 1s;
+}
+
 .youtube_card_details {
     align-self: center;
     display: flex;
