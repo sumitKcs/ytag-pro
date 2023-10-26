@@ -14,8 +14,8 @@ sidebar_close_button.addEventListener("click", () => {
 bottom_menu_items = Array.from(bottom_menu_items.children);
 bottom_menu_items.forEach((item) => {
   item.addEventListener("mouseover", () => {
-    item.firstElementChild.style.width = "55px";
-    item.firstElementChild.style.height = "55px";
+    item.firstElementChild.style.tran
+  
   });
 
   item.addEventListener("mouseleave", () => {

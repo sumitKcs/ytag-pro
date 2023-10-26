@@ -46,6 +46,7 @@
         /* border-radius: 2rem; */
         z-index: 10;
         background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 
     .bottom_menu_items {

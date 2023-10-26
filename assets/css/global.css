@@ -10,7 +10,9 @@
 @import url(youtube_card.css);
 @import url(load_more_button.css);
 @import url(floating_button_refresh.css);
-
+@import url(tools.css);
+@import url(swiper.css);
+@import url(carousel.css);
 
 :root {
     --primary-color: #089efc;

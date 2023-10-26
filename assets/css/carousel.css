@@ -1,0 +1,303 @@
+@font-face {
+    font-family: oswaldregular;
+    src: url(https://rekhtastaticcdn.pc.cdn.bitgravity.com/fonts/oswald-regular-webfont.woff2) format("woff2"), url(https://rekhtastaticcdn.pc.cdn.bitgravity.com/fonts/oswald-regular.ttf) format("truetype"), url(https://rekhtastaticcdn.pc.cdn.bitgravity.com/fonts/oswald-regular-webfont.woff) format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: oswaldregular;
+    src: url(https://rekhtastaticcdn.pc.cdn.bitgravity.com/fonts/oswald-regular-webfont.woff2) format("woff2"), url(https://rekhtastaticcdn.pc.cdn.bitgravity.com/fonts/oswald-regular.ttf) format("truetype"), url(https://rekhtastaticcdn.pc.cdn.bitgravity.com/fonts/oswald-regular-webfont.woff) format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: NotoNastaliqUrdu;
+    src: url(https://rekhtastaticcdn.pc.cdn.bitgravity.com/fonts/MehrNastaliqWeb.ttf) format("truetype"), url(https://rekhtastaticcdn.pc.cdn.bitgravity.com/fonts/MehrNastaliqWeb.woff2) format("woff2"), url(https://rekhtastaticcdn.pc.cdn.bitgravity.com/fonts/MehrNastaliqWeb.woff) format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: NotoNastaliqUrdu;
+    src: url(https://rekhtastaticcdn.pc.cdn.bitgravity.com/fonts/MehrNastaliqWeb.ttf) format("truetype"), url(https://rekhtastaticcdn.pc.cdn.bitgravity.com/fonts/MehrNastaliqWeb.woff2) format("woff2"), url(https://rekhtastaticcdn.pc.cdn.bitgravity.com/fonts/MehrNastaliqWeb.woff) format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: NotoDevanagari;
+    src: url(https://rekhtastaticcdn.pc.cdn.bitgravity.com/fonts/notosansdevanagari-regular.ttf) format("truetype"), url(https://rekhtastaticcdn.pc.cdn.bitgravity.com/fonts/notosansdevanagari-regular-webfont.woff2) format("woff2"), url(https://rekhtastaticcdn.pc.cdn.bitgravity.com/fonts/notosansdevanagari-regular-webfont.woff) format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: NotoDevanagari;
+    src: url(https://rekhtastaticcdn.pc.cdn.bitgravity.com/fonts/notosansdevanagari-regular.ttf) format("truetype"), url(https://rekhtastaticcdn.pc.cdn.bitgravity.com/fonts/notosansdevanagari-regular-webfont.woff2) format("woff2"), url(https://rekhtastaticcdn.pc.cdn.bitgravity.com/fonts/notosansdevanagari-regular-webfont.woff) format("woff");
+    font-display: swap;
+}
+
+.owl-theme {
+    z-index: 1;
+}
+
+.owl-theme .owl-nav {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+
+
+.owl-theme .owl-nav [class*=owl-] {
+    color: #FFF;
+    font-size: 30px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #D6D6D6;
+    display: none;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.owl-theme:hover .owl-nav [class*=owl-],
+.owl-theme:active .owl-nav [class*=owl-] {
+
+    display: inline-block;
+    background: white;
+}
+
+
+.owl-theme .owl-nav [class*=owl-]:hover,
+.owl-theme .owl-nav [class*=owl-]:active {
+    background: var(--primary-color);
+    color: #FFF;
+    text-decoration: none;
+
+}
+
+.owl-theme .owl-nav [class*=owl-]:focus {
+    border: transparent;
+    outline: transparent;
+
+}
+
+.owl-theme .owl-nav .disabled {
+    opacity: .5;
+    cursor: default
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 10px
+}
+
+.owl-theme .owl-dots {
+    margin-top: -3.5rem;
+    text-align: center;
+
+}
+
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+
+
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #869791
+}
+
+.owl-next {
+    right: -4px;
+
+
+}
+
+.owl-prev {
+    left: 5px;
+}
+
+.owl-prev,
+.owl-next {
+    z-index: 20;
+    position: absolute;
+    top: 76px;
+    height: 50px;
+    width: 50px;
+    background-color: #FFF;
+    border-radius: 50%;
+    padding: .5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.owl-prev span,
+.owl-next span {
+    text-align: center;
+    font-size: 20px;
+
+}
+
+
+
+.item img {
+    height: 25vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel a:any-link {
+    font-size: 12px;
+    color: black;
+    font-family: 'serif'
+}
+
+@media only screen and (max-width: 746px) {
+    .owl-carousel {
+        width: 100vw
+    }
+
+    .owl-theme .owl-nav [class*=owl-] {
+
+        display: none;
+
+
+    }
+
+}
+
+@media all {
+
+    .carousel div,
+    .carousel h2,
+    .carousel p,
+    .carousel a {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {}
+
+@media all {
+    .coupletBoxHeader {
+        width: 100% !important;
+    }
+
+    .carousel h2,
+    .carousel p {
+        line-height: 1;
+        margin: 0 0;
+        padding: 0 0;
+    }
+
+    .carousel a {
+        text-decoration: none;
+    }
+
+    :invalid {
+        box-shadow: none;
+    }
+
+    .carousel .coupletBoxHeader {
+        padding: 12px 0;
+        position: relative;
+    }
+
+    .carousel .coupletBoxHeader:before {
+        position: absolute;
+        bottom: 0;
+        content: '';
+        left: 0;
+        /* background: #eb0046; */
+        background: var(--primary-color);
+        height: 2px;
+        width: 32px;
+    }
+
+    .coupletBoxHeader h2 {
+        font-size: 18px;
+        text-transform: uppercase;
+        display: inline-block;
+        direction: ltr;
+        font-family: 'oswaldregular', 'NotoNastaliqUrdu', 'NotoDevanagari';
+        letter-spacing: 1px;
+        max-width: calc(100% - 56px);
+        line-height: 1.4;
+    }
+
+    .coupletBoxHeader p {
+        font-size: 12px;
+        color: #4c4c4c;
+        margin-top: 8px;
+        line-height: 1.2;
+    }
+
+    .coupletBoxHeader a {
+        position: absolute;
+        right: 0;
+        color: #0af;
+        top: 12px;
+        font-size: 18px;
+    }
+
+    .carousel h2,
+    .carousel p {
+        line-height: 1;
+        margin: 0 0;
+        padding: 0 0;
+    }
+}
+
+@media all {
+
+    .carousel h2,
+    .carousel p {
+        line-height: 1;
+    }
+
+    .carousel a:focus {
+        outline: none;
+    }
+
+    ::placeholder {
+        color: #bebebe;
+    }
+
+    .carousel a {
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .coupletBoxHeader h2 {
+        font-size: 24px;
+    }
+
+    .coupletBoxHeader p {
+        font-size: 16px;
+        margin-top: 12px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .coupletBoxHeader a {
+        top: auto;
+        bottom: 0;
+        font-size: 18px;
+    }
+}
