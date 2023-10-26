@@ -2,7 +2,7 @@
     align-self: center;
     width: 100vw !important;
     height: 60vh !important;
-    padding: .5rem 2rem 0rem 2rem;
+    padding: 2rem;
     position: relative;
 }
 
@@ -17,7 +17,7 @@
 .hero_section_image_slider .owl-next {
     z-index: 20;
     position: absolute;
-    top: 12rem;
+    top: -10rem;
     height: 50px;
     width: 50px;
     background-color: #FFF;
@@ -29,7 +29,6 @@
 .hero_section_image_slider .owl-dots {
     align-self: center;
     position: absolute;
-    top: 10rem;
     width: 100%;
     display: inline-block;
     z-index: 1;

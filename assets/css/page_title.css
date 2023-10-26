@@ -76,9 +76,9 @@
 
 @media all {
 
-    div,
-    h2,
-    p {
+    .contentListHeader div,
+    .contentListHeader h2,
+    .contentListHeader p {
         margin: 0;
         padding: 0;
         border: 0;
@@ -87,9 +87,9 @@
         vertical-align: baseline;
     }
 
-    div,
-    h2,
-    p {
+    .contentListHeader div,
+    .contentListHeader h2,
+    .contentListHeader p {
         margin: 0;
         padding: 0;
         border: 0;
@@ -105,8 +105,8 @@
         -webkit-box-sizing: border-box;
     }
 
-    h2,
-    p {
+    .contentListHeader h2,
+    .contentListHeader p {
         line-height: 1;
         margin: 0 0;
         padding: 0 0;
@@ -176,18 +176,13 @@
         text-align: left !important;
     }
 
-    h2,
-    p {
-        line-height: 1;
-        margin: 0 0;
-        padding: 0 0;
-    }
+
 }
 
 @media all {
 
-    h2,
-    p {
+    .contentListHeader h2,
+    .contentListHeader p {
         line-height: 1;
     }
 
@@ -265,7 +260,7 @@
 
 @media all {
 
-    h2 {
+    .contentListHeader h2 {
         margin: 0;
         padding: 0;
         border: 0;
@@ -274,7 +269,7 @@
         vertical-align: baseline;
     }
 
-    h2 {
+    .contentListHeader h2 {
         margin: 0;
         padding: 0;
         border: 0;
