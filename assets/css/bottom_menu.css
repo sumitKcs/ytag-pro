@@ -1,13 +1,14 @@
 .bottom_menu {
     width: 20rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
     justify-items: center;
     align-self: center;
     position: fixed;
     bottom: 1rem;
     padding: .7rem 0rem;
-    border-radius: 2rem;
+    /* border-radius: 2rem; */
     z-index: 10;
     background-color: white;
     gap: 1rem
@@ -27,16 +28,17 @@
 
 
 @media only screen and (max-width: 640px) {
+
     .bottom_menu {
-        width: 90%;
+        width: 100%;
         display: flex;
         justify-content: center;
         justify-items: center;
         align-self: center;
         position: fixed;
-        bottom: 1rem;
+        bottom: 0rem;
         padding: 1rem 0rem;
-        border-radius: 2rem;
+        /* border-radius: 2rem; */
         z-index: 10;
         background-color: white;
     }

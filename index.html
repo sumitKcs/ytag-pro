@@ -111,7 +111,13 @@
     </aside>
 
     <bottom_menu class="bottom_menu shadow">
-        <div class="bottom_menu_items icon_lg" id="bottom_menu">
+        <div class="update_subscriber_count  items_even  gap_sm icon_lg" id="bottom_menu" style="background: green; padding: 1rem 0rem;">
+            <span class="self_center" style="color: #FAF9F6; opacity: .9;">Update Subscriber Count
+            </span>
+            <button class="self_center"
+                style="background:#FAF9F6 ;padding: .5rem 2rem; border-radius: 1rem;opacity: .9;">Update</button>
+        </div>
+        <div class="bottom_menu_items icon_lg" id="bottom_menu" style="border-radius: 2rem;">
             <a href="/"><img src="./assets/img/home.png" alt="" height="25" width="25"></i></a>
             <a href="./routes/explore.html"><img src="./assets/img/chain.png" alt="" height="25" width="25"></i></a>
             <a href="./routes/explore.html"><img src="./assets/img/notes.png" alt="" height="25" width="25"></i></a>
@@ -267,6 +273,11 @@
         <div class="load_more items_center self_center mt_xs">
             <button class="load_more_button self_center">Load More...</button>
         </div>
+
+        <!-- floating button - -->
+        <a href="/" class="floating_refresh_button" title="update subscriber count" id="floating_refresh_button">
+            <img src="./assets/img/refresh.png" alt="write button">
+        </a>
     </main>
 </body>
 
