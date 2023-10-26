@@ -132,15 +132,30 @@
 
     <main style="width: 100%; ">
 
-        <section class="three_column_container">
+        <section class="three_column_container search mt_lg">
             <!-- column 1ad area -->
-            <div class="  w_full" style="height: fit-content;">column 1</div>
+            <div class="  w_full bg_black" style="height: fit-content;">column 1</div>
 
             <!-- column 2 -->
             <!-- content area -->
-            <div class="items_center">
-                <div class="flex_col_start">
-                    <div></div>
+            <div class="items_center w-full">
+                <div class="flex_col_start gap_md">
+                    <div>
+                        <!-- icons -->
+                    </div>
+                    <div class="w_full items_center ">
+                        <input class="w_full self_center shadow text_md" type="text" name="search" id="search"
+                            placeholder="enter video url"
+                            style="width: 100%; padding: 1rem 2rem;border-radius: 1rem; border:2px solid grey">
+                    </div>
+                    <div class="items_even w_full">
+                        <button class="text_white shadow text_md"
+                            style="padding: 1rem 3rem; border-radius: 2rem;background: rgb(199, 44, 44);">Clear</button>
+                        <button class="text_white shadow text_md"
+                            style="padding: 1rem 3rem; border-radius: 2rem;background: rgb(48, 48, 189);">Paste</button>
+                        <button class="text_white shadow text_md"
+                            style="padding: 1rem 3rem; border-radius: 2rem;background:rgb(23, 158, 23)">Search</button>
+                    </div>
                 </div>
             </div>
 

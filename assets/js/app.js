@@ -11,15 +11,15 @@ sidebar_close_button.addEventListener("click", () => {
   side_bar.style.display = "none";
 });
 
-bottom_menu_items = Array.from(bottom_menu_items.children);
-bottom_menu_items.forEach((item) => {
-  item.addEventListener("mouseover", () => {
-    item.firstElementChild.style.tran
-  
-  });
+// bottom_menu_items = Array.from(bottom_menu_items.children);
+// bottom_menu_items.forEach((item) => {
+//   item.addEventListener("mouseover", () => {
+//     item.firstElementChild.style.tran
 
-  item.addEventListener("mouseleave", () => {
-    item.firstElementChild.style.width = "30px";
-    item.firstElementChild.style.height = "30px";
-  });
-});
+//   });
+
+//   item.addEventListener("mouseleave", () => {
+//     item.firstElementChild.style.width = "30px";
+//     item.firstElementChild.style.height = "30px";
+//   });
+// });
