@@ -13,6 +13,7 @@
 @import url(tools.css);
 @import url(swiper.css);
 @import url(carousel.css);
+@import url(page_title.css);
 
 :root {
     --primary-color: #089efc;
