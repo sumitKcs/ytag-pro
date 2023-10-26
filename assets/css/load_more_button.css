@@ -1,0 +1,12 @@
+.load_more_button {
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: transparent;
+    border-radius: .5rem;
+}
+
+.load_more_button:focus {
+    outline: transparent;
+    background-color: grey;
+}

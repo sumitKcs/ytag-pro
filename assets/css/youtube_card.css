@@ -1,0 +1,112 @@
+.youtube_cards_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    place-items: center;
+    place-content: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.youtube_card {
+    align-self: center;
+    width: fit-content;
+    padding: 1.5rem 1rem;
+    border-radius: .5rem;
+    display: flex;
+    gap: 1rem;
+    position: relative;
+}
+
+.youtube_card_details {
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    gap: .3rem
+}
+
+.youtube_card_details>div {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    gap: .5rem;
+
+}
+
+.youtube_card img {
+    align-self: center;
+    border-radius: 50%;
+
+}
+
+.youtube_card .crown_icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.youtube_card .crown_icon {
+    position: absolute;
+    top: .2rem;
+    left: 5px;
+    background: rgba(128, 128, 128, 0.318);
+    border-radius: 50%;
+    padding: .3rem;
+}
+
+.youtube_card .number {
+    position: absolute;
+    top: .7rem;
+}
+
+.youtube_card .number::before {
+    position: absolute;
+    top: -6.6px;
+    left: -10px;
+    content: "";
+    background: rgba(128, 128, 128, 0.318);
+    border-radius: 50%;
+    padding: .9rem;
+}
+
+
+
+.pulse {
+    animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}
+
+
+
+
+@media only screen and (max-width: 428px) {
+
+    .youtube_cards_wrapper,
+    .youtube_card {
+        width: 94vw;
+    }
+
+    .youtube_card_details {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: .5rem
+    }
+
+    .youtube_card_details>div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
+        justify-content: center;
+        gap: .5rem;
+
+    }
+}

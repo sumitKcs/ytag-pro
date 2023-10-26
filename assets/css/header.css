@@ -1,0 +1,176 @@
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: white;
+    column-gap: .5rem;
+    font-family: 'LatoXBold', 'NotoDevanagari', 'MehrNastaliqRegular', 'NotoDevanagariRegular';
+
+}
+
+header .logo {
+    font-family: 'Agbalumo', serif;
+
+}
+
+
+header a:visited {
+    color: black;
+}
+
+header a:hover {
+    color: var(--green)
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin-right: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav>a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.mobile_menu {
+    display: none;
+}
+
+.side_navigation {
+    display: none;
+}
+
+.side_navigation_col1 a:any-link {
+    color: var(--primary-color);
+}
+
+header .search_wrapper {
+    align-self: center;
+    width: 100%;
+    position: relative;
+}
+
+header .search_wrapper input {
+    width: 100%;
+    padding: .8rem 3rem;
+    border-radius: var(--border-radius);
+    font-size: medium;
+    outline: transparent;
+    border: 1px solid var(--primary-color)
+}
+
+
+header select,
+header select:focus {
+    width: 60px;
+    height: fit-content;
+    border: transparent;
+    background: transparent;
+    outline: transparent;
+}
+
+header select option {
+    padding: 0 .5rem;
+    height: 5rem;
+}
+
+
+
+
+
+@media only screen and (max-width: 640px) {
+    nav.items_left {
+        display: none;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .logo {
+        grid-column: 2/3;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .mobile_menu {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+    }
+
+    aside {
+        width: 300px;
+        height: 100dvh;
+        background-color: white;
+        z-index: 3;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        justify-content: start;
+        justify-items: center;
+        padding: .5rem 1.5rem;
+        gap: 5rem;
+
+    }
+
+
+    .close_button {
+        padding: .2rem .5rem;
+        background-color: white;
+        border-radius: var(--border-radius);
+    }
+
+    .side_navigation_col1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        margin-top: -3rem;
+    }
+
+    .side_navigation_col2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+    }
+
+
+    header .search_wrapper {
+        display: none;
+    }
+
+
+
+    header .login,
+    header .header_buttons {
+        display: none;
+    }
+
+    .action_buttons :first-child {
+        position: absolute;
+        right: 6px;
+        top: .6rem;
+        z-index: 20;
+    }
+
+
+
+}
