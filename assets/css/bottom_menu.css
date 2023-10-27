@@ -40,8 +40,6 @@
 }
 
 .bottom_menu_items img:hover {
-
-
     transform: scale(2);
     /* 1 second transition duration */
 }

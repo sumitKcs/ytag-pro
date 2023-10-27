@@ -35,16 +35,17 @@ body {
     justify-content: start;
     justify-items: center;
     width: 100vw;
-    height: 100svh;
+    min-height: 100dvh;
     position: relative;
     font-family: 'Inter', sans-serif;
     overflow-x: hidden !important;
+    overflow-y: auto !important;
     margin-bottom: 8rem;
 
 }
 
 main {
-    height: fit-content;
+    height: 100% !important;
     width: 100vw !important;
     position: relative;
     display: flex;
@@ -63,12 +64,12 @@ main>section {
 
 @media only screen and (max-width: 767px) {
     body {
-        margin-bottom: 80rem;
+        margin-bottom: 50rem;
     }
 
-    main {
+    /* main {
         padding-bottom: 5rem !important;
-    }
+    } */
 
     main>section {
         width: 90vw !important;

@@ -41,7 +41,7 @@
 @media only screen and (max-width: 640px) {
     .hero_section_image_slider {
         width: 100% !important;
-        height: 40vh !important;
+        height: 50vh !important;
         position: absolute;
         top: 0;
         left: 0;
