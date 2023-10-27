@@ -38,7 +38,7 @@ body {
     height: 100svh;
     position: relative;
     font-family: 'Inter', sans-serif;
-    overflow: hidden !important;
+    overflow-x: hidden !important;
     margin-bottom: 8rem;
 
 }
