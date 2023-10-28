@@ -1,0 +1,27 @@
+.thumbnail-container {
+    align-self: center;
+    max-width: 80%;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .thumbnail-container {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+
+    .thumbnail {
+        max-width: 100%;
+        height: auto;
+    }
+
+}

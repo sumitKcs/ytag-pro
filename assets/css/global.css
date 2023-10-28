@@ -15,6 +15,7 @@
 @import url(carousel.css);
 @import url(page_title.css);
 @import url(search.css);
+@import url(thumbnail.css);
 
 :root {
     --primary-color: #089efc;
