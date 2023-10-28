@@ -12,6 +12,12 @@ const youtube_description = document.getElementById("youtube_description");
 const copy_youtube_description_button = document.getElementById(
   "copy_youtube_description_button"
 );
+
+const tag_checkboxes = document.querySelectorAll('input[type="checkbox"]');
+const copy_all_tag_button = document.getElementById("copy_all_tag_button");
+const copy_selected_tag_button = document.getElementById(
+  "copy_selected_tag_button"
+);
 // toggle mobile menu
 menu_icon.addEventListener("click", () => {
   side_bar.style.display = "flex";
@@ -54,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
       );
     });
   }
-
+  // youtube desciption
   if (copy_youtube_description_button) {
     copy_youtube_description_button?.addEventListener("click", function () {
       navigator.clipboard.writeText(youtube_description.innerText).then(
@@ -65,6 +71,45 @@ document.addEventListener("DOMContentLoaded", function () {
         (err) => console.log("error copying text")
       );
     });
+  }
+
+  // youtube all tags
+  if (tag_checkboxes) {
+    if (copy_all_tag_button) {
+      copy_all_tag_button?.addEventListener("click", function () {
+        const checkboxesValues = Array.from(tag_checkboxes)
+          .map((checkbox) => checkbox.value)
+          .join("\n");
+        navigator.clipboard.writeText(checkboxesValues).then(
+          (success) => {
+            console.log("text copied", checkboxesValues);
+            copy_all_tag_button.innerText = "Copied!";
+          },
+          (err) => console.log("error copying text")
+        );
+      });
+    }
+  }
+
+  // youtube selected tags
+  if (tag_checkboxes) {
+    if (copy_selected_tag_button) {
+      copy_selected_tag_button?.addEventListener("click", function () {
+        const tag_checkboxes_checked = document.querySelectorAll(
+          'input[type="checkbox"]:checked'
+        );
+        const checkboxesValues = Array.from(tag_checkboxes_checked)
+          .map((checkbox) => checkbox.value)
+          .join("\n");
+        navigator.clipboard.writeText(checkboxesValues).then(
+          (success) => {
+            console.log("text copied", checkboxesValues);
+            copy_selected_tag_button.innerText = "Copied!";
+          },
+          (err) => console.log("error copying text")
+        );
+      });
+    }
   }
 });
 
