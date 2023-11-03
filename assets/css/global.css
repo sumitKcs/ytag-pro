@@ -16,6 +16,7 @@
 @import url(page_title.css);
 @import url(search.css);
 @import url(thumbnail.css);
+@import url(channel_info.css);
 
 :root {
     --primary-color: #089efc;
